@@ -85,7 +85,5 @@ for (arr of myarrs){
 
 
 //correct 
-function squarenegs(arr){
-    let negatives = arr.filter(num => num >0);
-    return negatives
-}
+
+const squarenegatives2 = arr => arr.filter(num => num <0).map(num => num**2)
