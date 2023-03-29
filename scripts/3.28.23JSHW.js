@@ -15,10 +15,8 @@ function toCelcius(ftemp){
 let temps = [32,212,50];
 
 for (num of temps){
-    console.log(`The celcus temp of ${num} is ${toCelcius(num)}`)
+    console.log(`The celcius temp of ${num} is ${toCelcius(num)}`)
 };
-
-
 
 /*
     Exercise 2: Create a class for a User that sets username and password property
@@ -63,6 +61,9 @@ user1.changePassword('abc123','123abc');
     Ex 3. squareNegatives([2, 4, 6, 8, 10]) // []
 */
 
+
+
+
 function squareNegatives(arr){
     let output = []
 
@@ -82,3 +83,9 @@ for (arr of myarrs){
     console.log(squareNegatives(arr))
 };
 
+
+//correct 
+function squarenegs(arr){
+    let negatives = arr.filter(num => num >0);
+    return negatives
+}
